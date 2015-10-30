@@ -1,0 +1,83 @@
+1
+00:00:00,000 --> 00:00:07,900
+Hallo - Heute geht es um CouchDB - CouchDB ist ein Open-Source-NoSQL-Datenbanksystem
+
+2
+00:00:08,000 --> 00:00:12,900
+CouchDB ist ein dokumentenorientiertes und schemaloses Datenbanksystem
+
+3
+00:00:13,000 --> 00:00:18,900
+Es ist also kein relationales Datenbanksystem wie z.B. MySQL
+
+4
+00:00:19,000 --> 00:00:23,900
+Die Daten werden in einem Dokument im JSON-Format gespeichert
+
+5
+00:00:24,000 --> 00:00:33,900
+Die Installation verlaeuft wie folgt: man startet einen Paketmanager in seiner Linux-Distribution und installiert das Paket
+
+6
+00:00:34,000 --> 00:00:47,900
+bei Fedora sieht das in der Kommandozeile so aus: su -c "yum install couchdb" ENTER - Passwort eingeben
+
+7
+00:00:48,000 --> 00:00:51,900
+und warten bis die Pakete installiert sind
+
+8
+00:00:52,000 --> 00:01:16,900
+Wenn das der Fall ist, startet man den Dienst mit su -c "systemctl start couchdb.service" ENTER - Passwort eingeben
+
+9
+00:01:17,000 --> 00:01:19,900
+OK - jetzt kann es losgehen mit CouchDB
+
+10
+00:01:20,000 --> 00:01:29,900
+Den Status kann man sich anzeigen lassen per su -c "systemctl status couchdb.service"
+
+11
+00:01:30,000 --> 00:01:39,900
+und gestoppt wird der Dienst per su -c "systemctl stop couchdb.service"
+
+12
+00:01:40,000 --> 00:01:49,900
+OK - Status nochmal - und nochmal starten
+
+13
+00:01:50,000 --> 00:01:57,900
+OK - Durch eine einfache HTTP-Anfrage testet man ob CouchDB laeuft
+
+14
+00:01:58,000 --> 00:02:12,900
+Den Browser starten und eingeben: http://localhost:5984
+
+15
+00:02:13,000 --> 00:02:21,900
+Als Antwort bekommt man sofort ein JSON-Objekt zu Gesicht (in {})
+
+16
+00:02:13,000 --> 00:02:26,900
+"couchdb" als Schluesselname und "Welcome" als Wert
+
+17
+00:02:27,000 --> 00:02:33,900
+"version" als Schluesselname und "1.0.3" als Wert
+
+18
+00:02:34,000 --> 00:02:38,900
+das geht auch in der Kommandozeile
+
+19
+00:02:39,000 --> 00:03:09,900
+per curl -i -X GET http://localhost:5984 (-i um den Header anzuzeigen)
+
+20
+00:03:15,000 --> 00:03:18,900
+Tschau und Viel Glueck
+
+21
+00:03:19,000 --> 00:03:19,001
+Lizenz: http://creativecommons.org/licenses/by/3.0/

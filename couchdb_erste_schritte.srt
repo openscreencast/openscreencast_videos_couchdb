@@ -1,0 +1,79 @@
+1
+00:00:00,000 --> 00:00:05,900
+Hallo - CouchDB - erste Schritte
+
+2
+00:00:06,000 --> 00:00:24,900
+Gestartet wird CouchDB mittels Eingabe (bei Fedora) su -c "systemctl start couchdb.service" ENTER - Passwort eingeben
+
+3
+00:00:26,000 --> 00:00:28,900
+Das sollte schon bekannt sein
+
+4
+00:00:29,000 --> 00:00:39,900
+Der Test ob CouchDB laeuft erfolgt mittels Eingabe http://localhost:5984 beim Browser
+
+5
+00:00:40,000 --> 00:00:54,900
+oder in der Kommandozeile per curl http://localhost:5984
+
+6
+00:00:55,000 --> 00:01:09,900
+Alle vorhandenen Datenbanken werden durch die Eingabe http://localhost:5984/_all_dbs angezeigt
+
+7
+00:01:10,000 --> 00:01:23,900
+Ebenso in der Kommandozeile: curl http://localhost:5984/_all_dbs
+
+8
+00:01:24,000 --> 00:01:29,900
+Die einzige Datenbank die momentan existiert ist die Datenbank _users
+
+9
+00:01:30,000 --> 00:01:33,900
+CouchDB besitzt eine RESTful JSON API
+
+10
+00:01:34,000 --> 00:01:43,900
+Das bedeutet, die Aktionen auf die Ressourcen geschehen durch eine HTTP-Methode z.B. GET
+
+11
+00:01:44,000 --> 00:02:16,900
+Ein Beispiel: Anhand der Eingabe curl -X PUT http://localhost:5984/test (-X fuer die HTTP-Methode)
+
+12
+00:02:17,000 --> 00:02:22,900
+wird eine neue Datenbank angelegt
+
+13
+00:02:28,000 --> 00:02:36,900
+Abgefragt wird die Datenbank durch die HTTP-Methode GET
+
+14
+00:02:44,000 --> 00:02:49,900
+z.B. curl -X GET http://localhost:5984/test
+
+15
+00:02:50,000 --> 00:03:11,900
+Mittels Eingabe curl -X DELETE http://localhost:5984/test
+
+16
+00:03:12,000 --> 00:03:18,900
+kann die Datenbank wieder geloescht werden
+
+17
+00:03:27,000 --> 00:03:33,900
+Ausserdem verfuegt CouchDB ueber ein Webinterface namens Futon
+
+18
+00:03:34,000 --> 00:03:59,900
+das man mit http://localhost:5984/_utils/ erreichen kann
+
+19
+00:04:05,000 --> 00:04:07,900
+Tschau und Viel Glueck
+
+20
+00:04:09,000 --> 00:04:09,001
+Lizenz: http://creativecommons.org/licenses/by/3.0/
