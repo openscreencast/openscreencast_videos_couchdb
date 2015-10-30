@@ -1,0 +1,63 @@
+1
+00:00:10,000 --> 00:00:15,900
+Hallo - CouchDB - Informationen zu einer Datenbank
+
+2
+00:00:16,000 --> 00:00:35,900
+Alle Datenbanken werden mittels Eingabe curl http://localhost:5984/_all_dbs in der Kommandozeile angezeigt
+
+3
+00:00:36,000 --> 00:00:54,900
+Ebenso geht das per Browser oder man benutzt das Tool Futon, das aufgerufen wird nach der Eingabe http://localhost:5984/_utils
+
+4
+00:00:55,000 --> 00:01:24,900
+Informationen zu einer bestimmten Datenbank werden angezeigt nach der Eingabe curl -X GET http://localhost:5984/Name_der_Datenbank
+
+5
+00:01:25,000 --> 00:01:35,900
+Zusaetzlich werden folgende Informationen angezeigt: der Name der Datenbank - db_name
+
+6
+00:01:36,000 --> 00:01:43,900
+die Anzahl der Dokument - doc_count, die Anzahl der geloeschten Dokument doc_del_count
+
+7
+00:01:44,000 --> 00:01:48,900
+die aktuelle Anzahl der Aktualisierungen der Datenbank - update_seq
+
+8
+00:01:49,000 --> 00:01:55,900
+die Zahl der Saeuberungsoperationen der Datenbank - purge_seq
+
+9
+00:01:56,000 --> 00:02:02,900
+die Anzeige ob die compact-Funktion gerade ausgefuehrt wird - compact_running
+
+10
+00:02:03,000 --> 00:02:08,900
+wieviel Speicherplatz die Datenbank benoetigt - disk_size
+
+11
+00:02:09,000 --> 00:02:14,900
+wann die Datenbank erstellt wurde - instance_start_time
+
+12
+00:02:15,000 --> 00:02:22,900
+die Version des Formats fuer die Datenspeicherung - disk_format_version
+
+13
+00:02:23,000 --> 00:02:26,900
+und die Anzahl der committed-Updates - committed_update_seq
+
+14
+00:02:27,000 --> 00:02:50,900
+die binaeren Dateien zu den jeweiligen Datenbanken befinden sich uebrigens im Verzeichnis /var/lib/couchdb
+
+15
+00:02:55,000 --> 00:02:56,900
+Tschau und Viel Glueck
+
+16
+00:02:57,000 --> 00:02:57,001
+Lizenz der Untertitel-Datei: http://creativecommons.org/licenses/by/3.0/
